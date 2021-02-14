@@ -2,12 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="nasa_apka.Page1Xaml"
-			 Title="Úvod">
-
+			 Title="Úvod"
+             Background="Black">
+               
+             
     <AbsoluteLayout>
+        
         <Label
             Grid.Row="1"
-             Text="Suhlasíte, že Vás to môže omylom zabiť?"/>
+             Text="Suhlasíte, že Vás to môže omylom zabiť?"
+             TextColor="White"/>
+        
         <Button x:Name="button"
                     Text="Súhlasím"
                     TextColor="White"
@@ -17,7 +22,8 @@
                     BorderRadius="6"
                     Clicked="OnNextPageButtonClicked"
                     ImageSource="like.png"
-                    AbsoluteLayout.LayoutBounds=".95, .97, .45, .08" AbsoluteLayout.LayoutFlags="All"/>
+                    AbsoluteLayout.LayoutBounds=".50, .80, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
+                    
         <Button x:Name="exit"
                     Text="Nesúhlasím"
                     TextColor="White"
@@ -27,6 +33,6 @@
                     BorderRadius="6"
                     Clicked="ExitApp"
                     ImageSource="dislike.png"
-                    AbsoluteLayout.LayoutBounds=".05, .97, .45, .08" AbsoluteLayout.LayoutFlags="All"/>
+                    AbsoluteLayout.LayoutBounds=".50, .95, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 </ContentPage>

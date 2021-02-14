@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="nasa_apka.Page2Xaml"
-			 Title="Príznaky">
+			 Title="Príznaky"
+             Background="Black">
     <ContentPage.Content>
         <StackLayout>
             <Button x:Name="nextPageButton" Text="Bolesť hlavy" Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand" />
-           <Button x:Name="nextPageButtonA" Text="Bolesť brucha" Clicked="OnNextPageButtonClickedA" VerticalOptions="CenterAndExpand" />
+            <Button x:Name="nextPageButtonA" Text="Bolesť brucha" Clicked="OnNextPageButtonClickedA" VerticalOptions="CenterAndExpand" />
             <Button x:Name="nextPageButtonB" Text="Vypadávanie vlasov" Clicked="OnNextPageButtonClickedB" VerticalOptions="CenterAndExpand" />
             <Button x:Name="nextPageButtonC" Text="Bolesť hrdla" Clicked="OnNextPageButtonClickedC" VerticalOptions="CenterAndExpand" />
         </StackLayout>
