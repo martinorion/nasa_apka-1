@@ -7,7 +7,6 @@
         <StackLayout>
             <Label Grid.Row="1"
             Text="Pomôže Vám toto: ..."/>
-            <Button x:Name="previousButton" Text="Predchádzajúca strana" Clicked="OnPreviousPageButtonClicked" VerticalOptions="CenterAndExpand" />
             <Button x:Name="rootButton" Text="Hlavná strana" Clicked="OnRootPageButtonClicked" VerticalOptions="CenterAndExpand" />
 
         </StackLayout>

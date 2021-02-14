@@ -14,9 +14,6 @@ namespace nasa_apka
 			var nextPageButton = new Button { Text = "Bolesť hlavy", VerticalOptions = LayoutOptions.CenterAndExpand };
 			nextPageButton.Clicked += OnNextPageButtonClicked;
 
-			var previousPageButton = new Button { Text = "Previous Page", VerticalOptions = LayoutOptions.CenterAndExpand };
-			previousPageButton.Clicked += OnPreviousPageButtonClicked;
-
 			var nextPageButtonA = new Button { Text = "Bolesť brucha", VerticalOptions = LayoutOptions.CenterAndExpand };
 			nextPageButtonA.Clicked += OnNextPageButtonClicked;
 			
@@ -32,7 +29,6 @@ namespace nasa_apka
 			{
 				Children = {
 					nextPageButton,
-					previousPageButton,
 					nextPageButtonA,
 					nextPageButtonB,
 					nextPageButtonC
@@ -45,10 +41,6 @@ namespace nasa_apka
 			await Navigation.PushAsync(new Page3());
 		}
 
-		async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-		{
-			await Navigation.PopAsync();
-		}
 		async void OnNextPageButtonClickedA(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new Page4Xaml());

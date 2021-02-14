@@ -17,11 +17,6 @@ namespace nasa_apka
             InitializeComponent();
         }
 
-        async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
-
         async void OnRootPageButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PopToRootAsync();

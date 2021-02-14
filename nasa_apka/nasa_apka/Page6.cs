@@ -11,9 +11,6 @@ namespace nasa_apka
     {
         public Page6()
 		{
-			var previousPageButton = new Button { Text = "Predchádzajúca strana", VerticalOptions = LayoutOptions.CenterAndExpand };
-			previousPageButton.Clicked += OnPreviousPageButtonClicked;
-
 			var rootPageButton = new Button { Text = "Hlavná strana", VerticalOptions = LayoutOptions.CenterAndExpand };
 			rootPageButton.Clicked += OnRootPageButtonClicked;
 
@@ -22,16 +19,10 @@ namespace nasa_apka
 			Content = new StackLayout
 			{
 				Children = {
-					previousPageButton,
 					rootPageButton,
 
 				}
 			};
-		}
-
-		async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-		{
-			await Navigation.PopAsync();
 		}
 
 		async void OnRootPageButtonClicked(object sender, EventArgs e)
