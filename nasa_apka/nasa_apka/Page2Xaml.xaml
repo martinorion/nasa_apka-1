@@ -5,11 +5,49 @@
 			 Title="Príznaky"
              Background="Black">
     <ContentPage.Content>
-        <StackLayout>
-            <Button x:Name="nextPageButton" Text="Bolesť hlavy" Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand" />
-            <Button x:Name="nextPageButtonA" Text="Bolesť brucha" Clicked="OnNextPageButtonClickedA" VerticalOptions="CenterAndExpand" />
-            <Button x:Name="nextPageButtonB" Text="Vypadávanie vlasov" Clicked="OnNextPageButtonClickedB" VerticalOptions="CenterAndExpand" />
-            <Button x:Name="nextPageButtonC" Text="Bolesť hrdla" Clicked="OnNextPageButtonClickedC" VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        
+        <AbsoluteLayout>
+
+                <Button x:Name="nextPageButton"
+                    Text="Bolesť hlavy"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClicked"                  
+                    AbsoluteLayout.LayoutBounds=".50, .05, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Button x:Name="nextPageButtonA"
+                    Text="Bolesť brucha"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClickedA"                   
+                    AbsoluteLayout.LayoutBounds=".50, .15, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Button x:Name="nextPageButtonB"
+                    Text="Vypadávanie vlasov"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClickedB"                   
+                    AbsoluteLayout.LayoutBounds=".50, .25, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Button x:Name="nextPageButtonC"
+                    Text="Bolesť hrdla"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClickedC"
+                    AbsoluteLayout.LayoutBounds=".50, .35, .70, .08" AbsoluteLayout.LayoutFlags="All"/>
+            </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
